@@ -23,10 +23,6 @@ a {
    text-decoration: none;
 }
 
-.btn:hover {
-   opacity: 0.9;
-}
-
 .btn {
    display: inline-block;
    min-width: 118px;
@@ -38,6 +34,28 @@ a {
    font-weight: 600;
    border-radius: 999px;
    background: #171100;
+}
+
+.btn:hover {
+   opacity: 0.9;
+}
+
+.heading {
+   font-family: var(--font-heading);
+   color: #171100;
+   font-family: Sen;
+   font-weight: 700;
+   letter-spacing: -0.02em;
+}
+
+.heading.lv1 {
+   font-size: 5.8rem;
+   line-height: 1.17;
+}
+
+.heading.lv2 {
+   font-size: 3.8rem;
+   line-height: 1.263;
 }
 
 .main-content {
@@ -191,16 +209,6 @@ a {
    padding: 64px 0 0 130px;
 }
 
-.hero .heading {
-   font-family: var(--font-heading);
-   color: #171100;
-   font-family: Sen;
-   font-size: 5.8rem;
-   font-weight: 700;
-   line-height: 1.17;
-   letter-spacing: -0.02em;
-}
-
 .hero .desc {
    margin-top: 28px;
    color: #5f5b53;
@@ -260,4 +268,47 @@ a {
    font-size: 4.4rem;
    font-weight: 700;
    line-height: 1.227;
+}
+
+/* Popular */
+.popular {
+   margin-top: 135px;
+   padding: 65px 0;
+}
+
+.popular-top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.popular-top .desc {
+   margin-top: 16px;
+   width: 458px;
+   color: #5f5b53;
+   font-size: 1.8rem;
+   line-height: 1.667;
+}
+
+.popular .controls {
+   display: flex;
+   gap: 18px;
+}
+
+.popular-top .contol-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   color: var(--primary-color);
+   border: 1px solid var(--primary-color);
+   background-color: transparent;
+}
+
+.popular-top .contol-btn:hover {
+   background: var(--primary-color);
+   color: #fff;
+   cursor: pointer;
 }

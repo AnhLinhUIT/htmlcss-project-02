@@ -5,6 +5,7 @@
 :root {
   --primary-color: #ffb900;
   --font-heading: Sen, sans-serif;
+  --line-clamp: 1;
 }
 
 html {
@@ -416,8 +417,17 @@ a {
   background-color: #2e2100;
 }
 
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+
 .feedback-item {
   display: flex;
+  width: 100%;
+  flex-shrink: 0;
+  transform: translateX(-100%);
+  transition: all ease 0.3s;
 }
 
 .feedback-item .avatar {
